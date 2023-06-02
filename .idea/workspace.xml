@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dfc04ae8-d963-4279-9f5c-14e922d42279" name="Changes" comment="" />
+    <list default="true" id="dfc04ae8-d963-4279-9f5c-14e922d42279" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/linkedList/MyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/linkedList/MyList.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,7 +28,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/fede/Desktop/Obligatorio/grupo15-p2-labs",
+    "last_opened_file_path": "C:/Users/Yabel/OneDrive - Universidad de Montevideo/Escritorio/tads/grupo15-p2-labs",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -44,6 +46,7 @@
       <option name="presentableId" value="Default" />
       <updated>1685557326410</updated>
       <workItem from="1685557331219" duration="788000" />
+      <workItem from="1685746945336" duration="35000" />
     </task>
     <servers />
   </component>

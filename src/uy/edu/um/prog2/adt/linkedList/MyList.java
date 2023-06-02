@@ -11,5 +11,5 @@ public interface MyList<T> extends Iterable<T> {
     void remove(T value);
 
     int size();
-
+    //prueba
 }
