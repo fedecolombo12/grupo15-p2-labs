@@ -1,4 +1,4 @@
-package uy.edu.um.adt.linkedlist;
+package uy.edu.um.prog2.adt.linkedList;
 
 public interface MyList<T> extends Iterable<T> {
 

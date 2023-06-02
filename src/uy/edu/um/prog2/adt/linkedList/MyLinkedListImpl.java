@@ -1,4 +1,4 @@
-package uy.edu.um.adt.linkedlist;
+package uy.edu.um.prog2.adt.linkedList;
 
 import uy.edu.um.adt.queue.EmptyQueueException;
 import uy.edu.um.adt.queue.MyQueue;
