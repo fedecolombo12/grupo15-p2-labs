@@ -1,9 +1,9 @@
-package MyBinarySearchTree;
+
 
 public class MyBinarySearchTreeTest {
 
     public static void main(String[] args) {
-        MyBinarySearchTreeImpl<Integer,String> prueba = new MyBinarySearchTreeImpl<Integer, String>();
+        MyBinarySearchTree.MyBinarySearchTreeImpl<Integer,String> prueba = new MyBinarySearchTree.MyBinarySearchTreeImpl<Integer, String>();
 
         prueba.insert(6, "Perros");
         prueba.insert(8,"Gatos");
