@@ -1,3 +1,5 @@
+package uy.edu.um.prog2.adt.stack;
+
 import java.util.EmptyStackException;
 
 public interface MyStack<T>{
