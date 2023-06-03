@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="dfc04ae8-d963-4279-9f5c-14e922d42279" name="Changes" comment="Arreglo de TEST, de carpeta a PACKAGE">
+=======
+    <list default="true" id="dfc04ae8-d963-4279-9f5c-14e922d42279" name="Changes" comment="Arreglo de carpetas a Package">
+>>>>>>> Stashed changes
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,7 +32,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Yabel/OneDrive - Universidad de Montevideo/Escritorio/tads/grupo15-p2-labs&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/fede/Desktop/Obligatorio/grupo15-p2-labs&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -52,7 +56,12 @@
       <updated>1685557326410</updated>
       <workItem from="1685557331219" duration="788000" />
       <workItem from="1685746945336" duration="479000" />
+<<<<<<< Updated upstream
       <workItem from="1685747441995" duration="2518000" />
+=======
+      <workItem from="1685747441995" duration="1058000" />
+      <workItem from="1685748719013" duration="632000" />
+>>>>>>> Stashed changes
     </task>
     <task id="LOCAL-00001" summary="prueba commit">
       <created>1685747035006</created>
