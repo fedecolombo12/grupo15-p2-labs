@@ -1,9 +1,8 @@
 package uy.edu.um.prog2.adt.linkedList;
 
-import uy.edu.um.adt.queue.EmptyQueueException;
-import uy.edu.um.adt.queue.MyQueue;
-import uy.edu.um.adt.stack.EmptyStackException;
-import uy.edu.um.adt.stack.MyStack;
+import uy.edu.um.prog2.adt.queue.MyQueue;
+import uy.edu.um.prog2.adt.stack.EmptyStackException;
+import uy.edu.um.prog2.adt.stack.MyStack;
 
 import java.util.Iterator;
 
