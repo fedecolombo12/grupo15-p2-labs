@@ -1,4 +1,4 @@
-package MyBinarySearchTree;
+package uy.edu.um.prog2.adt.MyBinarySearchTree.src;
 
 public class NodeBST<K extends Comparable<K>, T> {
 

@@ -1,9 +1,9 @@
-
+import uy.edu.um.prog2.adt.MyBinarySearchTree.MyBinarySearchTreeImpl;
 
 public class MyBinarySearchTreeTest {
 
     public static void main(String[] args) {
-        MyBinarySearchTree.MyBinarySearchTreeImpl<Integer,String> prueba = new MyBinarySearchTree.MyBinarySearchTreeImpl<Integer, String>();
+        MyBinarySearchTreeImpl<Integer,String> prueba = new MyBinarySearchTreeImpl<Integer, String>();
 
         prueba.insert(6, "Perros");
         prueba.insert(8,"Gatos");

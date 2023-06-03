@@ -1,4 +1,4 @@
-package MyBinarySearchTree;
+package uy.edu.um.prog2.adt.MyBinarySearchTree;
 
 import java.util.List;
 
