@@ -20,4 +20,8 @@ public class NodoStack<T> {
     public void setSiguiente(NodoStack<T> siguiente) {
         this.siguiente = siguiente;
     }
+
+    public NodoStack<T> getAnterior() { return anterior;}
+
+    public void setAnterior(NodoStack<T> anterior) { this.anterior = anterior; }
 }

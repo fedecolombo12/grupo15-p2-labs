@@ -33,7 +33,7 @@ public class Queue<T> implements MyQueue<T> {
 
     @Override
     public T dequeue() throws EmptyQueueException {
-        T item = null;
+        T item;
         if (isEmpty()) {
             throw new EmptyQueueException();
         } else {
@@ -82,7 +82,7 @@ public class Queue<T> implements MyQueue<T> {
 
     @Override
     public T dequeueLeft() throws EmptyQueueException {
-        T item = null;
+        T item;
         if (isEmpty()) {
             throw new EmptyQueueException();
         } else {

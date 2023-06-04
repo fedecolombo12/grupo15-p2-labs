@@ -3,7 +3,7 @@ import uy.edu.um.prog2.adt.MyBinarySearchTree.MyBinarySearchTreeImpl;
 public class MyBinarySearchTreeTest {
 
     public static void main(String[] args) {
-        MyBinarySearchTreeImpl<Integer,String> prueba = new MyBinarySearchTreeImpl<Integer, String>();
+        MyBinarySearchTreeImpl<Integer,String> prueba = new MyBinarySearchTreeImpl<>();
 
         prueba.insert(6, "Perros");
         prueba.insert(8,"Gatos");

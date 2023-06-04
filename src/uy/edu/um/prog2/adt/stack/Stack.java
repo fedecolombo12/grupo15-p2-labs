@@ -7,12 +7,14 @@ public class Stack<T> implements MyStack<T>{
         this.ultimo = ultimo;
     }
     private NodoStack<T> ultimo;
+
     public NodoStack<T> getUltimo() {
         return ultimo;
     }
     public void setUltimo(NodoStack<T> ultimo) {
         this.ultimo = ultimo;
     }
+
     @Override
     public void pop() throws EmptyStackException {
         if (isEmpty()) {
@@ -30,9 +32,10 @@ public class Stack<T> implements MyStack<T>{
         }
         return getUltimo().getValue();
     }
+
     @Override
     public void push(T element) {
-        NodoStack<T> new_nodo = new NodoStack<T>(element);
+        NodoStack<T> new_nodo = new NodoStack<>(element);
         if (isEmpty()) {
             setUltimo(new_nodo);
         } else {
@@ -41,6 +44,7 @@ public class Stack<T> implements MyStack<T>{
             setUltimo(new_nodo);
         }
     }
+
     @Override
     public void imprimirStack() {
         NodoStack<T> nodoActual = getUltimo();
@@ -49,10 +53,12 @@ public class Stack<T> implements MyStack<T>{
             nodoActual = nodoActual.getSiguiente();
         }
     }
+
     @Override
     public boolean isEmpty() {
         return getUltimo() == null;
     }
+
     @Override
     public void makeEmpty() {
         while (!isEmpty()) {
