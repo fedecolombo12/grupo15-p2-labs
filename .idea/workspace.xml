@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="dfc04ae8-d963-4279-9f5c-14e922d42279" name="Changes" comment="Arreglo de TEST, de carpeta a PACKAGE">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/MyHeap/MyHeapImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/MyHeap/MyHeapImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +56,7 @@
       <workItem from="1685747441995" duration="2518000" />
       <workItem from="1685840993286" duration="5000" />
       <workItem from="1685841007957" duration="1000" />
+      <workItem from="1685841017090" duration="678000" />
     </task>
     <task id="LOCAL-00001" summary="prueba commit">
       <created>1685747035006</created>
