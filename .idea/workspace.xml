@@ -4,21 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f91ce5e-ddf7-4297-97a5-87c82be8758c" name="Changes" comment="Agrego test de Stack">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/MyBinarySearchTree/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/MyBinarySearchTree/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/MyBinarySearchTree/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/MyBinarySearchTree/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/MyBinarySearchTree/MyBinarySearchTree.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/MyBinarySearchTree/MyBinarySearchTreeImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/MyBinarySearchTree/NodeBST.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/MyBinarySearchTree/Tree.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/MyBinarySearchTree/out/production/Tree/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/MyBinarySearchTree/out/production/Tree/MyBinarySearchTree/MyBinarySearchTree.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/MyBinarySearchTree/out/production/Tree/MyBinarySearchTree/MyBinarySearchTreeImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/MyBinarySearchTree/out/production/Tree/MyBinarySearchTree/MyBinarySearchTreeTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/MyBinarySearchTree/out/production/Tree/MyBinarySearchTree/NodeBST.class" beforeDir="false" />
+    <list default="true" id="9f91ce5e-ddf7-4297-97a5-87c82be8758c" name="Changes" comment="Cambios">
+      <change beforePath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/binarySearchTree/MyBinarySearchTreeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/binarySearchTree/MyBinarySearchTreeImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +21,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -122,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685933081988</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Cambios">
+      <created>1685935904053</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1685935904053</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,6 +129,7 @@
     <MESSAGE value="Arreglo de TEST, de carpeta a PACKAGE" />
     <MESSAGE value="Hago modificaciones y agrego test de Queue" />
     <MESSAGE value="Agrego test de Stack" />
-    <option name="LAST_COMMIT_MESSAGE" value="Agrego test de Stack" />
+    <MESSAGE value="Cambios" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cambios" />
   </component>
 </project>

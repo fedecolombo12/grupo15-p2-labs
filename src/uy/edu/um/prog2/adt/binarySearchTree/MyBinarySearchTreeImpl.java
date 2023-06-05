@@ -26,22 +26,22 @@ public class MyBinarySearchTreeImpl <K extends Comparable<K>, T> implements MyBi
 
     @Override
     public T find(K key) {
-        return (T) findRecursivo(key, raiz).getValue();
+        return findRecursivo(key, raiz);
     }
 
-    public NodeBST findRecursivo (K keyBuscar, NodeBST<K,T> nuevoNodo){
-        if (nuevoNodo == null){
-            return null;
-        } else {
+    public T findRecursivo (K keyBuscar, NodeBST<K,T> nuevoNodo){
+        T nuevoValor = null;
+        if (nuevoNodo != null){
         int valor = keyBuscar.compareTo(nuevoNodo.getKey());
-           if (valor > 0) {
-                return findRecursivo(keyBuscar, nuevoNodo.getRight());
-            } else if (valor < 0){
-               return findRecursivo(keyBuscar, nuevoNodo.getRight());
+            if (valor == 0) {
+                nuevoValor = nuevoNodo.getValue();
+            } else if (valor > 0) {
+                nuevoValor = findRecursivo(keyBuscar, nuevoNodo.getRight());
             } else {
-               return nuevoNodo;
+               nuevoValor = findRecursivo(keyBuscar, nuevoNodo.getRight());
             }
         }
+        return nuevoValor;
     }
 
     @Override
