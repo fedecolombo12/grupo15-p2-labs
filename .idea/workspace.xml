@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f91ce5e-ddf7-4297-97a5-87c82be8758c" name="Changes" comment="Arreglo findRecursivo">
+    <list default="true" id="9f91ce5e-ddf7-4297-97a5-87c82be8758c" name="Changes" comment="BinarySearch Arreglado y Test comenzado">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/binarySearchTree/MyBinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/binarySearchTree/MyBinarySearchTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/grupo15-p2-labs/uy/edu/um/prog2/adt/binarySearchTree/MyBinarySearchTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/grupo15-p2-labs/uy/edu/um/prog2/adt/binarySearchTree/MyBinarySearchTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/grupo15-p2-labs/uy/edu/um/prog2/adt/binarySearchTree/MyBinarySearchTreeImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/grupo15-p2-labs/uy/edu/um/prog2/adt/binarySearchTree/MyBinarySearchTreeImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/grupo15-p2-labs/uy/edu/um/prog2/adt/binarySearchTree/NodeBST.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/grupo15-p2-labs/uy/edu/um/prog2/adt/binarySearchTree/NodeBST.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/grupo15-p2-labs/MyBinarySearchTreeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/grupo15-p2-labs/MyBinarySearchTreeTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/binarySearchTree/MyBinarySearchTreeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/binarySearchTree/MyBinarySearchTreeImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/binarySearchTree/NodeBST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/binarySearchTree/NodeBST.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/MyBinarySearchTreeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/MyBinarySearchTreeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +65,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MyBinarySearchTreeTest.delete">
+  <component name="RunManager" selected="JUnit.MyBinarySearchTreeTest.insert">
     <configuration name="MyBinarySearchTreeTest.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="grupo15-p2-labs" />
       <option name="PACKAGE_NAME" value="" />
@@ -74,11 +76,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyBinarySearchTreeTest.find" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MyBinarySearchTreeTest.inOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="grupo15-p2-labs" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MyBinarySearchTreeTest" />
-      <option name="METHOD_NAME" value="find" />
+      <option name="METHOD_NAME" value="inOrder" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -94,11 +96,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyBinarySearchTreeTest.testing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MyBinarySearchTreeTest.posOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="grupo15-p2-labs" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MyBinarySearchTreeTest" />
-      <option name="METHOD_NAME" value="testing" />
+      <option name="METHOD_NAME" value="posOrder" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyBinarySearchTreeTest.preOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="grupo15-p2-labs" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyBinarySearchTreeTest" />
+      <option name="METHOD_NAME" value="preOrder" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -106,10 +118,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MyBinarySearchTreeTest.delete" />
         <item itemvalue="JUnit.MyBinarySearchTreeTest.insert" />
-        <item itemvalue="JUnit.MyBinarySearchTreeTest.testing" />
-        <item itemvalue="JUnit.MyBinarySearchTreeTest.find" />
+        <item itemvalue="JUnit.MyBinarySearchTreeTest.inOrder" />
+        <item itemvalue="JUnit.MyBinarySearchTreeTest.posOrder" />
+        <item itemvalue="JUnit.MyBinarySearchTreeTest.preOrder" />
+        <item itemvalue="JUnit.MyBinarySearchTreeTest.delete" />
       </list>
     </recent_temporary>
   </component>
@@ -129,7 +142,7 @@
       <workItem from="1685841017090" duration="678000" />
       <workItem from="1685924068181" duration="2261000" />
       <workItem from="1685926374793" duration="6714000" />
-      <workItem from="1685968330156" duration="5989000" />
+      <workItem from="1685968330156" duration="7065000" />
     </task>
     <task id="LOCAL-00001" summary="prueba commit">
       <created>1685747035006</created>
@@ -187,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685936150623</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="BinarySearch Arreglado y Test comenzado">
+      <created>1685975425011</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1685975425011</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,6 +221,7 @@
     <MESSAGE value="Agrego test de Stack" />
     <MESSAGE value="Cambios" />
     <MESSAGE value="Arreglo findRecursivo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Arreglo findRecursivo" />
+    <MESSAGE value="BinarySearch Arreglado y Test comenzado" />
+    <option name="LAST_COMMIT_MESSAGE" value="BinarySearch Arreglado y Test comenzado" />
   </component>
 </project>

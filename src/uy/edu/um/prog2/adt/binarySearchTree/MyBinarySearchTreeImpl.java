@@ -40,6 +40,7 @@ public class MyBinarySearchTreeImpl <K extends Comparable<K>, T> implements MyBi
         return valInicial;
     }
 
+
     @Override
     public void insert(K key, T data) {
         NodeBST<K,T> ingreso = new NodeBST<>(key,data);
