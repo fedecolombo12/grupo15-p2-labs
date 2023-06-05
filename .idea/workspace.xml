@@ -4,19 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dfc04ae8-d963-4279-9f5c-14e922d42279" name="Changes" comment="Arreglo de TEST, de carpeta a PACKAGE">
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/grupo15-p2-labs/classpath.index" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/grupo15-p2-labs/uy/edu/um/prog2/adt/MyHeap/MyHeapImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/grupo15-p2-labs/uy/edu/um/prog2/adt/MyHeap/MyHeapImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/grupo15-p2-labs/uy/edu/um/prog2/adt/linkedList/ListaEnlazada.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/grupo15-p2-labs/uy/edu/um/prog2/adt/linkedList/ListaEnlazada.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/grupo15-p2-labs/uy/edu/um/prog2/adt/queue/Queue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/grupo15-p2-labs/uy/edu/um/prog2/adt/queue/Queue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/linkedList/ListaEnlazada.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/linkedList/ListaEnlazada.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/queue/EmptyQueueException.java" beforeDir="false" />
+    <list default="true" id="dfc04ae8-d963-4279-9f5c-14e922d42279" name="Changes" comment="Hago modificaciones y agrego test de Queue">
       <change beforePath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/queue/Queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/queue/Queue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/stack/EmptyStackException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/ListaEnlazadaTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/MyBinarySearchTreeTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +64,7 @@
       <workItem from="1685841007957" duration="1000" />
       <workItem from="1685841017090" duration="678000" />
       <workItem from="1685924068181" duration="2261000" />
-      <workItem from="1685926374793" duration="1250000" />
+      <workItem from="1685926374793" duration="1609000" />
     </task>
     <task id="LOCAL-00001" summary="prueba commit">
       <created>1685747035006</created>
@@ -105,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685748623737</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Hago modificaciones y agrego test de Queue">
+      <created>1685927841773</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1685927841774</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,6 +111,7 @@
     <MESSAGE value="prueba commit" />
     <MESSAGE value="Arreglo de carpetas a Package" />
     <MESSAGE value="Arreglo de TEST, de carpeta a PACKAGE" />
-    <option name="LAST_COMMIT_MESSAGE" value="Arreglo de TEST, de carpeta a PACKAGE" />
+    <MESSAGE value="Hago modificaciones y agrego test de Queue" />
+    <option name="LAST_COMMIT_MESSAGE" value="Hago modificaciones y agrego test de Queue" />
   </component>
 </project>
