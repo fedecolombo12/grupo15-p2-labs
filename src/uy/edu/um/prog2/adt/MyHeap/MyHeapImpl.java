@@ -1,5 +1,7 @@
 package uy.edu.um.prog2.adt.MyHeap;
 
+import uy.edu.um.prog2.adt.exceptions.EmptyHeapException;
+
 public class MyHeapImpl <T extends Comparable<T>> implements MyHeap{
 
     private boolean heapMaximo;
@@ -14,8 +16,9 @@ public class MyHeapImpl <T extends Comparable<T>> implements MyHeap{
         this.ultimaPosicion = 0;
     }
 
+
     @Override
-    public Comparable deleteAndReturn() {
+    public T delete() throws EmptyHeapException {
         return null;
     }
 
