@@ -1,5 +1,5 @@
 package uy.edu.um.prog2.adt.queue;
-import uy.edu.um.prog2.adt.queue.EmptyQueueException;
+import uy.edu.um.prog2.adt.exceptions.EmptyQueueException;
 
 public class Queue<T> implements MyQueue<T> {
     private NodoQueue<T> primero;

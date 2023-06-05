@@ -1,5 +1,5 @@
 import org.junit.jupiter.api.Test;
-import uy.edu.um.prog2.adt.queue.EmptyQueueException;
+import uy.edu.um.prog2.adt.exceptions.EmptyQueueException;
 import uy.edu.um.prog2.adt.queue.MyQueue;
 import uy.edu.um.prog2.adt.queue.Queue;
 
@@ -17,7 +17,6 @@ class QueueTest {
         queueTest.enqueue(8);
         queueTest.enqueue(11);
         queueTest.enqueue(15);
-        queueTest.enqueueRight(28);
 
         try {
             Integer eliminado = queueTest.dequeue();

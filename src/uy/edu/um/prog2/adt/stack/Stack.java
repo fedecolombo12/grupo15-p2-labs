@@ -1,9 +1,9 @@
 package uy.edu.um.prog2.adt.stack;
 
-import java.util.EmptyStackException;
+import uy.edu.um.prog2.adt.exceptions.EmptyStackException;
 
 public class Stack<T> implements MyStack<T>{
-    public Stack(NodoStack<T> ultimo) {
+    public Stack() {
         this.ultimo = ultimo;
     }
     private NodoStack<T> ultimo;
@@ -16,13 +16,15 @@ public class Stack<T> implements MyStack<T>{
     }
 
     @Override
-    public void pop() throws EmptyStackException {
+    public T pop() throws EmptyStackException {
         if (isEmpty()) {
             throw new EmptyStackException();
         } else {
+            T valor = getUltimo().getValue();
             setUltimo(getUltimo().getSiguiente());
             /* Nodo<T> aux = getUltimo().getSiguiente();
             setUltimo(aux); OTRA FORMA*/
+            return valor;
         }
     }
     @Override
@@ -60,7 +62,7 @@ public class Stack<T> implements MyStack<T>{
     }
 
     @Override
-    public void makeEmpty() {
+    public void makeEmpty() throws EmptyStackException {
         while (!isEmpty()) {
             pop();
         }

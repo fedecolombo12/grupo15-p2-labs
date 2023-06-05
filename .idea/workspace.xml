@@ -5,7 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dfc04ae8-d963-4279-9f5c-14e922d42279" name="Changes" comment="Hago modificaciones y agrego test de Queue">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/grupo15-p2-labs/uy/edu/um/prog2/adt/queue/EmptyQueueException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/grupo15-p2-labs/uy/edu/um/prog2/adt/queue/MyQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/grupo15-p2-labs/uy/edu/um/prog2/adt/queue/MyQueue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/grupo15-p2-labs/uy/edu/um/prog2/adt/queue/Queue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/grupo15-p2-labs/uy/edu/um/prog2/adt/queue/Queue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/grupo15-p2-labs/uy/edu/um/prog2/adt/stack/EmptyStackException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/grupo15-p2-labs/uy/edu/um/prog2/adt/stack/MyStack.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/grupo15-p2-labs/uy/edu/um/prog2/adt/stack/MyStack.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/grupo15-p2-labs/uy/edu/um/prog2/adt/stack/Stack.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/grupo15-p2-labs/uy/edu/um/prog2/adt/stack/Stack.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/grupo15-p2-labs/QueueTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/grupo15-p2-labs/QueueTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/exceptions/EmptyQueueException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/exceptions/EmptyQueueException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/exceptions/EmptyStackException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/exceptions/EmptyStackException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/queue/MyQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/queue/MyQueue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/queue/Queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/queue/Queue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/stack/MyStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/stack/MyStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/stack/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/stack/Stack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/QueueTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/QueueTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,20 +45,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/fede/Desktop/Obligatorio/grupo15-p2-labs&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/fede/Desktop/Obligatorio/grupo15-p2-labs",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "vcs.Git",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
@@ -64,7 +80,7 @@
       <workItem from="1685841007957" duration="1000" />
       <workItem from="1685841017090" duration="678000" />
       <workItem from="1685924068181" duration="2261000" />
-      <workItem from="1685926374793" duration="1609000" />
+      <workItem from="1685926374793" duration="6403000" />
     </task>
     <task id="LOCAL-00001" summary="prueba commit">
       <created>1685747035006</created>
