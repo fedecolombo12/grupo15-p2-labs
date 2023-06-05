@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dfc04ae8-d963-4279-9f5c-14e922d42279" name="Changes" comment="Comienzo de Heap">
-      <change afterPath="$PROJECT_DIR$/test/ListaEnlazadaTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/grupo15-p2-labs.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/grupo15-p2-labs.iml" afterDir="false" />
+    <list default="true" id="dfc04ae8-d963-4279-9f5c-14e922d42279" name="Changes" comment="Test Lista Enlazada">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ListaEnlazadaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/ListaEnlazadaTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +76,16 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.ListaEnlazadaTest">
+    <configuration name="ListaEnlazadaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="grupo15-p2-labs" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ListaEnlazadaTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ListaEnlazadaTest.addOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="grupo15-p2-labs" />
       <option name="PACKAGE_NAME" value="" />
@@ -88,8 +96,42 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ListaEnlazadaTest.contains" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="grupo15-p2-labs" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ListaEnlazadaTest" />
+      <option name="METHOD_NAME" value="contains" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ListaEnlazadaTest.get" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="grupo15-p2-labs" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ListaEnlazadaTest" />
+      <option name="METHOD_NAME" value="get" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ListaEnlazadaTest.remove" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="grupo15-p2-labs" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ListaEnlazadaTest" />
+      <option name="METHOD_NAME" value="remove" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ListaEnlazadaTest" />
+        <item itemvalue="JUnit.ListaEnlazadaTest.contains" />
+        <item itemvalue="JUnit.ListaEnlazadaTest.remove" />
+        <item itemvalue="JUnit.ListaEnlazadaTest.get" />
         <item itemvalue="JUnit.ListaEnlazadaTest.addOrder" />
       </list>
     </recent_temporary>
@@ -105,7 +147,7 @@
       <workItem from="1685557331219" duration="788000" />
       <workItem from="1685746945336" duration="479000" />
       <workItem from="1685747441995" duration="2518000" />
-      <workItem from="1685922901885" duration="1419000" />
+      <workItem from="1685922901885" duration="2064000" />
     </task>
     <task id="LOCAL-00001" summary="prueba commit">
       <created>1685747035006</created>
@@ -142,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685837648133</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Test Lista Enlazada">
+      <created>1685924364870</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1685924364870</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,13 +213,7 @@
     <MESSAGE value="Arreglo de carpetas a Package" />
     <MESSAGE value="Arreglo de TEST, de carpeta a PACKAGE" />
     <MESSAGE value="Comienzo de Heap" />
-    <option name="LAST_COMMIT_MESSAGE" value="Comienzo de Heap" />
-  </component>
-  <component name="XDebuggerManager">
-    <watches-manager>
-      <inline-watch fileUrl="file://$PROJECT_DIR$/test/ListaEnlazadaTest.java" line="40">
-        <watch expression="((ListaEnlazadaTest)this).nuevaLista" language="JAVA" custom="ListaEnlazadaTest" />
-      </inline-watch>
-    </watches-manager>
+    <MESSAGE value="Test Lista Enlazada" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test Lista Enlazada" />
   </component>
 </project>

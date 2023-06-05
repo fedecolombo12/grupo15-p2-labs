@@ -1,6 +1,6 @@
 import uy.edu.um.prog2.adt.linkedList.ListaEnlazada;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class ListaEnlazadaTest {
 
@@ -30,31 +30,51 @@ public class ListaEnlazadaTest {
         assertEquals("Bueno", nuevaLista.getPrimero().getValue());
         }
 
-        @org.junit.jupiter.api.Test
-        void addOrder() {
+    @org.junit.jupiter.api.Test
+    void remove() {
+            nuevaLista.add("A");
+            nuevaLista.add("B");
+            nuevaLista.add("C");
 
-        nuevaLista.add("Hola");
-        nuevaLista.add("Bueno");
-        nuevaLista.add("Bien");
+            // Chequeo si el elemento a REMOVER esta en la lista
+            assertTrue(nuevaLista.contains("B"));
 
-        // Chequear que "Hola" sea primer elemento
-            assertEquals("Hola", nuevaLista.getPrimero().getValue());
+            // REMUEVO
+            nuevaLista.remove("B");
 
-        // Chequear ultimo valor
-            assertEquals("Bien", nuevaLista.getUltimo().getValue());
-
+            // Chequeo que haya sido eliminado y que los otros dos siguen ahí
+            assertFalse(nuevaLista.contains("B"));
+            assertTrue(nuevaLista.contains("A"));
+            assertTrue(nuevaLista.contains("C"));
         }
 
-        @org.junit.jupiter.api.Test
-        void remove() {
-        }
+    @org.junit.jupiter.api.Test
+    void get() {
 
-        @org.junit.jupiter.api.Test
-        void get() {
+        nuevaLista.add("A");
+        nuevaLista.add("B");
+        nuevaLista.add("C");
+
+        // Get posicion 1
+        assertEquals("A", nuevaLista.get(1));
+        assertEquals("B", nuevaLista.get(2));
+
+        // Get el valor de una posicion que NO EXISTE (EXCEPCIÓN)
+        assertNull(nuevaLista.get(6));
+
         }
 
         @org.junit.jupiter.api.Test
         void contains() {
+
+        nuevaLista.add("A");
+        nuevaLista.add("B");
+        nuevaLista.add("C");
+
+        // Chequear si "A" esta en la lista
+
+            assertTrue(nuevaLista.contains("A"));
+            assertFalse(nuevaLista.contains("G"));
         }
     }
 
