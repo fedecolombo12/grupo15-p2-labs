@@ -4,14 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f91ce5e-ddf7-4297-97a5-87c82be8758c" name="Changes" comment="BinarySearch Arreglado y Test comenzado">
+    <list default="true" id="9f91ce5e-ddf7-4297-97a5-87c82be8758c" name="Changes" comment="Test BinarySearchTree (falta DELETE)">
+      <change afterPath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/heap/MyHeap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/heap/MyHeapImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/heap/NodoH.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/grupo15-p2-labs/uy/edu/um/prog2/adt/binarySearchTree/MyBinarySearchTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/grupo15-p2-labs/uy/edu/um/prog2/adt/binarySearchTree/MyBinarySearchTree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/grupo15-p2-labs/uy/edu/um/prog2/adt/binarySearchTree/MyBinarySearchTreeImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/grupo15-p2-labs/uy/edu/um/prog2/adt/binarySearchTree/MyBinarySearchTreeImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/grupo15-p2-labs/uy/edu/um/prog2/adt/binarySearchTree/NodeBST.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/grupo15-p2-labs/uy/edu/um/prog2/adt/binarySearchTree/NodeBST.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/grupo15-p2-labs/MyBinarySearchTreeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/grupo15-p2-labs/MyBinarySearchTreeTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/binarySearchTree/MyBinarySearchTreeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/binarySearchTree/MyBinarySearchTreeImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/MyBinarySearchTreeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/MyBinarySearchTreeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/MyHeap/IngresoHeap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/MyHeap/MyHeap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/MyHeap/MyHeapImpl.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +21,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -142,7 +143,7 @@
       <workItem from="1685841017090" duration="678000" />
       <workItem from="1685924068181" duration="2261000" />
       <workItem from="1685926374793" duration="6714000" />
-      <workItem from="1685968330156" duration="7065000" />
+      <workItem from="1685968330156" duration="9126000" />
     </task>
     <task id="LOCAL-00001" summary="prueba commit">
       <created>1685747035006</created>
@@ -207,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685975425011</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Test BinarySearchTree (falta DELETE)">
+      <created>1685976220206</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1685976220206</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,6 +230,7 @@
     <MESSAGE value="Cambios" />
     <MESSAGE value="Arreglo findRecursivo" />
     <MESSAGE value="BinarySearch Arreglado y Test comenzado" />
-    <option name="LAST_COMMIT_MESSAGE" value="BinarySearch Arreglado y Test comenzado" />
+    <MESSAGE value="Test BinarySearchTree (falta DELETE)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test BinarySearchTree (falta DELETE)" />
   </component>
 </project>
