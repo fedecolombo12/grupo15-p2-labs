@@ -4,24 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dfc04ae8-d963-4279-9f5c-14e922d42279" name="Changes" comment="Hago modificaciones y agrego test de Queue">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/grupo15-p2-labs/uy/edu/um/prog2/adt/queue/EmptyQueueException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/grupo15-p2-labs/uy/edu/um/prog2/adt/queue/MyQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/grupo15-p2-labs/uy/edu/um/prog2/adt/queue/MyQueue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/grupo15-p2-labs/uy/edu/um/prog2/adt/queue/Queue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/grupo15-p2-labs/uy/edu/um/prog2/adt/queue/Queue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/grupo15-p2-labs/uy/edu/um/prog2/adt/stack/EmptyStackException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/grupo15-p2-labs/uy/edu/um/prog2/adt/stack/MyStack.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/grupo15-p2-labs/uy/edu/um/prog2/adt/stack/MyStack.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/grupo15-p2-labs/uy/edu/um/prog2/adt/stack/Stack.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/grupo15-p2-labs/uy/edu/um/prog2/adt/stack/Stack.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/grupo15-p2-labs/QueueTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/grupo15-p2-labs/QueueTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/exceptions/EmptyQueueException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/exceptions/EmptyQueueException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/exceptions/EmptyStackException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/exceptions/EmptyStackException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/queue/MyQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/queue/MyQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/queue/Queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/queue/Queue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/stack/MyStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/stack/MyStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/stack/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/stack/Stack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/QueueTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/QueueTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="dfc04ae8-d963-4279-9f5c-14e922d42279" name="Changes" comment="Agrego test de Stack" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -80,7 +63,7 @@
       <workItem from="1685841007957" duration="1000" />
       <workItem from="1685841017090" duration="678000" />
       <workItem from="1685924068181" duration="2261000" />
-      <workItem from="1685926374793" duration="6403000" />
+      <workItem from="1685926374793" duration="6714000" />
     </task>
     <task id="LOCAL-00001" summary="prueba commit">
       <created>1685747035006</created>
@@ -117,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685927841774</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Agrego test de Stack">
+      <created>1685933081988</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1685933081988</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,6 +118,7 @@
     <MESSAGE value="Arreglo de carpetas a Package" />
     <MESSAGE value="Arreglo de TEST, de carpeta a PACKAGE" />
     <MESSAGE value="Hago modificaciones y agrego test de Queue" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hago modificaciones y agrego test de Queue" />
+    <MESSAGE value="Agrego test de Stack" />
+    <option name="LAST_COMMIT_MESSAGE" value="Agrego test de Stack" />
   </component>
 </project>
