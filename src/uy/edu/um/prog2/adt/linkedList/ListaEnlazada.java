@@ -15,6 +15,7 @@ public class ListaEnlazada<T extends Comparable<T>> implements Lista<T>{
     public void setUltimo(NodoLista<T> ultimo) {
         this.ultimo = ultimo;
     }
+
     @Override
     public void add(T value) {
         if (getPrimero() == null){ // si la lista es vacia lo agrega al pricipio

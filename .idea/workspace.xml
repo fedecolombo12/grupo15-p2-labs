@@ -5,13 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dfc04ae8-d963-4279-9f5c-14e922d42279" name="Changes" comment="Arreglo de TEST, de carpeta a PACKAGE">
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/MyHeap/MyHeapImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/MyHeap/MyHeapImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/grupo15-p2-labs/classpath.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/grupo15-p2-labs/uy/edu/um/prog2/adt/MyHeap/MyHeapImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/grupo15-p2-labs/uy/edu/um/prog2/adt/MyHeap/MyHeapImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/grupo15-p2-labs/uy/edu/um/prog2/adt/linkedList/ListaEnlazada.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/grupo15-p2-labs/uy/edu/um/prog2/adt/linkedList/ListaEnlazada.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/grupo15-p2-labs/uy/edu/um/prog2/adt/queue/Queue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/grupo15-p2-labs/uy/edu/um/prog2/adt/queue/Queue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/linkedList/ListaEnlazada.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/linkedList/ListaEnlazada.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/queue/EmptyQueueException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/queue/Queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/queue/Queue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/stack/EmptyStackException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ListaEnlazadaTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/MyBinarySearchTreeTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -29,7 +46,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Yabel/OneDrive - Universidad de Montevideo/Escritorio/tads/grupo15-p2-labs&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/fede/Desktop/Obligatorio/grupo15-p2-labs&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -57,6 +74,8 @@
       <workItem from="1685840993286" duration="5000" />
       <workItem from="1685841007957" duration="1000" />
       <workItem from="1685841017090" duration="678000" />
+      <workItem from="1685924068181" duration="2261000" />
+      <workItem from="1685926374793" duration="1250000" />
     </task>
     <task id="LOCAL-00001" summary="prueba commit">
       <created>1685747035006</created>
