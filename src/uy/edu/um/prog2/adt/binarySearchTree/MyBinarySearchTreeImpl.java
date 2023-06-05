@@ -1,4 +1,4 @@
-package uy.edu.um.prog2.adt.MyBinarySearchTree;
+package uy.edu.um.prog2.adt.binarySearchTree;
 
 public class MyBinarySearchTreeImpl <K extends Comparable<K>, T> implements MyBinarySearchTree<K, T> {
 

@@ -1,4 +1,4 @@
-import uy.edu.um.prog2.adt.MyBinarySearchTree.MyBinarySearchTreeImpl;
+import uy.edu.um.prog2.adt.binarySearchTree.MyBinarySearchTreeImpl;
 
 public class MyBinarySearchTreeTest {
 
