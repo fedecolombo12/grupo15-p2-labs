@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f91ce5e-ddf7-4297-97a5-87c82be8758c" name="Changes" comment="Cambios">
+    <list default="true" id="9f91ce5e-ddf7-4297-97a5-87c82be8758c" name="Changes" comment="Arreglo findRecursivo">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/binarySearchTree/MyBinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/binarySearchTree/MyBinarySearchTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/binarySearchTree/MyBinarySearchTreeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/binarySearchTree/MyBinarySearchTreeImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/binarySearchTree/NodeBST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/binarySearchTree/NodeBST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/MyBinarySearchTreeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/MyBinarySearchTreeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,12 +20,12 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -31,30 +35,88 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/fede/Desktop/Obligatorio/grupo15-p2-labs&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_opened_file_path": "C:/Users/Yabel/OneDrive - Universidad de Montevideo/Documentos/UM/Semestre 3/Prog 2/GitHub/grupo15-p2-labs",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "vcs.Git",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="uy.edu.um.prog2.adt.binarySearchTree" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
     </key>
   </component>
+  <component name="RunManager" selected="JUnit.MyBinarySearchTreeTest.delete">
+    <configuration name="MyBinarySearchTreeTest.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="grupo15-p2-labs" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyBinarySearchTreeTest" />
+      <option name="METHOD_NAME" value="delete" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyBinarySearchTreeTest.find" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="grupo15-p2-labs" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyBinarySearchTreeTest" />
+      <option name="METHOD_NAME" value="find" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyBinarySearchTreeTest.insert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="grupo15-p2-labs" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyBinarySearchTreeTest" />
+      <option name="METHOD_NAME" value="insert" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyBinarySearchTreeTest.testing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="grupo15-p2-labs" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyBinarySearchTreeTest" />
+      <option name="METHOD_NAME" value="testing" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MyBinarySearchTreeTest.delete" />
+        <item itemvalue="JUnit.MyBinarySearchTreeTest.insert" />
+        <item itemvalue="JUnit.MyBinarySearchTreeTest.testing" />
+        <item itemvalue="JUnit.MyBinarySearchTreeTest.find" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="dfc04ae8-d963-4279-9f5c-14e922d42279" name="Changes" comment="" />
+      <changelist id="9f91ce5e-ddf7-4297-97a5-87c82be8758c" name="Changes" comment="Arreglo findRecursivo" />
       <created>1685557326410</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -67,6 +129,7 @@
       <workItem from="1685841017090" duration="678000" />
       <workItem from="1685924068181" duration="2261000" />
       <workItem from="1685926374793" duration="6714000" />
+      <workItem from="1685968330156" duration="5989000" />
     </task>
     <task id="LOCAL-00001" summary="prueba commit">
       <created>1685747035006</created>
@@ -117,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685935904053</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Arreglo findRecursivo">
+      <created>1685936150623</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1685936150623</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,6 +200,7 @@
     <MESSAGE value="Hago modificaciones y agrego test de Queue" />
     <MESSAGE value="Agrego test de Stack" />
     <MESSAGE value="Cambios" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cambios" />
+    <MESSAGE value="Arreglo findRecursivo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Arreglo findRecursivo" />
   </component>
 </project>

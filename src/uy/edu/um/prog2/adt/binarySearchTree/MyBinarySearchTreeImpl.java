@@ -1,8 +1,12 @@
 package uy.edu.um.prog2.adt.binarySearchTree;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+
 public class MyBinarySearchTreeImpl <K extends Comparable<K>, T> implements MyBinarySearchTree<K, T> {
 
-    private NodeBST<K,T> raiz;
+    private NodeBST<K, T> raiz;
 
     public NodeBST<K, T> getRaiz() {
         return raiz;
@@ -12,137 +16,91 @@ public class MyBinarySearchTreeImpl <K extends Comparable<K>, T> implements MyBi
         this.raiz = raiz;
     }
 
-    private NodeBST<K,T> nodoPadre;
-
-    public NodeBST<K, T> getNodoPadre() {
-        return nodoPadre;
+    public MyBinarySearchTreeImpl() {
+        this.raiz = null;
     }
-
-    public void setNodoPadre(NodeBST<K, T> nodoPadre) {
-        this.nodoPadre = nodoPadre;
-    }
-
-    private int size = 0;
 
     @Override
     public T find(K key) {
-        return findRecursivo(key, raiz);
+        return findRec(key, raiz);
     }
 
-    public T findRecursivo (K keyBuscar, NodeBST<K,T> nuevoNodo){
-        T nuevoValor = null;
-        if (nuevoNodo != null){
+    public T findRec(K keyBuscar, NodeBST<K,T> nuevoNodo){
+        T valInicial = null;
+        if (raiz != null){
         int valor = keyBuscar.compareTo(nuevoNodo.getKey());
-            if (valor == 0) {
-                nuevoValor = nuevoNodo.getValue();
-            } else if (valor > 0) {
-                nuevoValor = findRecursivo(keyBuscar, nuevoNodo.getRight());
+            if (valor > 0) {
+               valInicial = findRec(keyBuscar, nuevoNodo.getRightCh());
+            } else if (valor == 0) {
+                valInicial = raiz.getValue();
             } else {
-               nuevoValor = findRecursivo(keyBuscar, nuevoNodo.getRight());
+                valInicial = findRec(keyBuscar, raiz.getLeftCh());
             }
         }
-        return nuevoValor;
+        return valInicial;
     }
 
     @Override
     public void insert(K key, T data) {
-        setRaiz(insertRecursivo(getRaiz(),key,data));
-        size = size +1;
-    }
-
-    public NodeBST<K,T> insertRecursivo(NodeBST<K,T> nuevoNodo, K key, T data){
-        if (nuevoNodo == null){
-            return new NodeBST<K, T>(key,data);
-        }
-        if (nuevoNodo.getKey().compareTo(key)< 0){
-            nuevoNodo.setRight(insertRecursivo(nuevoNodo.getRight(),key,data));
-        } else if (nuevoNodo.getKey().compareTo(key) > 0) {
-            nuevoNodo.setLeft(insertRecursivo(nuevoNodo.getLeft(),key,data));
+        NodeBST<K,T> ingreso = new NodeBST<>(key,data);
+        if (raiz == null){
+            raiz = ingreso;
         } else {
-            nuevoNodo.setValue(data);
+            raiz.ingresoRec(key,data);
         }
-        return nuevoNodo;
     }
 
     @Override
     public void delete(K key) {
-            raiz = deleteRecursivo(raiz,key);
-    }
-    public NodeBST deleteRecursivo(NodeBST<K, T> nuevoNodo, K key){
-        NodeBST<K,T> nodo = new NodeBST<K, T>(key, null);
-        if (nuevoNodo == null){
-            return null;
+        if (raiz != null){
+            raiz = raiz.deleteRec(key);
         }
-        int comparar = nodo.compareTo(nuevoNodo);
-        if (comparar > 0){
-            nuevoNodo.setRight(deleteRecursivo(nuevoNodo.getRight(),key));
-        } else if (comparar < 0){
-            nuevoNodo.setLeft(deleteRecursivo(nuevoNodo.getLeft(),key));
-        } else {
-            if (nuevoNodo.getLeft() == null){
-                return nuevoNodo.getRight();
-            } else if (nuevoNodo.getRight() == null) {
-                    return nuevoNodo.getLeft();
-            } else {
-                NodeBST nodeMin = min(nuevoNodo.getRight());
-                nuevoNodo.setKey((K) nodeMin.getKey());
-                nuevoNodo.setValue((T) nodeMin.getValue());
-                nuevoNodo.setRight(delMin(nuevoNodo.getRight()));
-            }
-        }
-        return nuevoNodo;
     }
 
+
     public NodeBST min(NodeBST<K,T> node){
-        if (node.getLeft() == null){
+        if (node.getLeftCh() == null){
             return node;
         }
-        return min(node.getRight());
+        return min(node.getLeftCh());
     }
 
     public NodeBST delMin(NodeBST<K,T> node){
-        if (node.getLeft() == null){
-            return node.getRight();
+        if (node.getLeftCh() == null){
+            return node.getRightCh();
         }
-        node.setLeft(delMin(node.getLeft()));
+        node.setLeftCh(delMin(node.getLeftCh()));
         return node;
     }
 
-    public void preOrder(){
-        preOrderRecursivo(raiz);
-    }
-
-    private void preOrderRecursivo(NodeBST nodo) {
-        if (nodo != null){
-            System.out.println(nodo.getKey() + " : " + nodo.getValue());
-            preOrderRecursivo(nodo.getLeft());
-            preOrderRecursivo(nodo.getRight());
+    @Override
+    public List<K> preOrder() {
+        List<K> nuevaList = new ArrayList<K>();
+        if (raiz != null){
+            nuevaList.addAll(raiz.preOrderT());
         }
+        return nuevaList;
     }
 
-    public void inOrder (){
-        inOrdenRecursivo(raiz);
-    }
-
-    private void inOrdenRecursivo (NodeBST nodo){
-        if (nodo != null){
-            inOrdenRecursivo(nodo.getLeft());
-            inOrdenRecursivo(nodo.getRight());
-            System.out.println(nodo.getKey() + ": " + nodo.getValue());
+    @Override
+    public List<K> inOrder() {
+        List<K> nuevaLista = new ArrayList<K>();
+        if (raiz != null){
+            nuevaLista.addAll(raiz.inOrderT());
         }
+        return nuevaLista;
     }
 
-
-    public void postOrden() {
-        postOrdenRecursivo(raiz);
-    }
-
-    private void postOrdenRecursivo(NodeBST nodo){
-        if (nodo != null){
-            postOrdenRecursivo(nodo.getLeft());
-            postOrdenRecursivo(nodo.getRight());
-            System.out.println(nodo.getKey() + ": " + nodo.getValue());
+    @Override
+    public List<K> posOrder() {
+        List<K> nuevaLis = new ArrayList<K>();
+        if (raiz != null){
+            nuevaLis.addAll(raiz.posOrderT());
         }
+        return nuevaLis;
     }
 
 }
+
+
+

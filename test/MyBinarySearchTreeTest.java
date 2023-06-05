@@ -1,25 +1,50 @@
+
+
+import org.junit.jupiter.api.Test;
 import uy.edu.um.prog2.adt.binarySearchTree.MyBinarySearchTreeImpl;
+import uy.edu.um.prog2.adt.binarySearchTree.MyBinarySearchTree;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class MyBinarySearchTreeTest {
+    MyBinarySearchTreeImpl<Integer,String> nuevoArbol = new MyBinarySearchTreeImpl<>();
 
-    public static void main(String[] args) {
-        MyBinarySearchTreeImpl<Integer,String> prueba = new MyBinarySearchTreeImpl<>();
 
-        prueba.insert(6, "Perros");
-        prueba.insert(8,"Gatos");
-        prueba.insert(3,"Hamsters");
-        prueba.insert(1, "Pez");
-        prueba.insert(4, "Gallinas");
+    @Test
+    void insert() {
 
-        System.out.println(prueba.find(6)); //Devuelve perros, que es la información que tiene 6
+        nuevoArbol.insert(2, "r");
+        nuevoArbol.insert(1,"a");
+        nuevoArbol.insert(5,"l");
+        nuevoArbol.insert(3, "b");
+        nuevoArbol.insert(4,"o");
 
-        System.out.println("PreOden: ");
-        prueba.preOrder();
+        System.out.println(nuevoArbol.find(2)); // devuelve "r", lo que significa que fue INSERTADO CORRECTAMENTE
+        assertEquals("r", nuevoArbol.find(2));
+    }
 
-        System.out.println("InOrden: ");
-        prueba.inOrder();
+    @Test
+    void delete() {
 
-        System.out.println("PostOrden: ");
-        prueba.postOrden();
+        nuevoArbol.insert(2, "r");
+        nuevoArbol.insert(1,"a");
+        nuevoArbol.insert(5,"l");
+        nuevoArbol.insert(3, "b");
+        nuevoArbol.insert(4,"o");
+
+    }
+
+    @Test
+    void preOrder() {
+    }
+
+    @Test
+    void inOrder() {
+    }
+
+    @Test
+    void posOrder() {
     }
 }
+
+
+
