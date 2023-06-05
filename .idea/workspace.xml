@@ -4,6 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="9f91ce5e-ddf7-4297-97a5-87c82be8758c" name="Changes" comment="Test BinarySearchTree (falta DELETE)">
       <change afterPath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/heap/MyHeap.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/heap/MyHeapImpl.java" afterDir="false" />
@@ -12,6 +13,10 @@
       <change beforePath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/MyHeap/IngresoHeap.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/MyHeap/MyHeap.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/MyHeap/MyHeapImpl.java" beforeDir="false" />
+=======
+    <list default="true" id="9f91ce5e-ddf7-4297-97a5-87c82be8758c" name="Changes" comment="Agrego binarySearchTree y sus respectivos test de nuevo">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +135,11 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+<<<<<<< Updated upstream
       <changelist id="9f91ce5e-ddf7-4297-97a5-87c82be8758c" name="Changes" comment="Arreglo findRecursivo" />
+=======
+      <changelist id="9f91ce5e-ddf7-4297-97a5-87c82be8758c" name="Changes" comment="Agrego test de Stack" />
+>>>>>>> Stashed changes
       <created>1685557326410</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -143,7 +152,11 @@
       <workItem from="1685841017090" duration="678000" />
       <workItem from="1685924068181" duration="2261000" />
       <workItem from="1685926374793" duration="6714000" />
+<<<<<<< Updated upstream
       <workItem from="1685968330156" duration="9126000" />
+=======
+      <workItem from="1685934251086" duration="1576000" />
+>>>>>>> Stashed changes
     </task>
     <task id="LOCAL-00001" summary="prueba commit">
       <created>1685747035006</created>
@@ -187,6 +200,7 @@
       <option name="project" value="LOCAL" />
       <updated>1685933081988</updated>
     </task>
+<<<<<<< Updated upstream
     <task id="LOCAL-00007" summary="Cambios">
       <created>1685935904053</created>
       <option name="number" value="00007" />
@@ -216,6 +230,16 @@
       <updated>1685976220206</updated>
     </task>
     <option name="localTasksCounter" value="11" />
+=======
+    <task id="LOCAL-00007" summary="Agrego binarySearchTree y sus respectivos test de nuevo">
+      <created>1685934474324</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1685934474324</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+>>>>>>> Stashed changes
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,10 +251,15 @@
     <MESSAGE value="Arreglo de TEST, de carpeta a PACKAGE" />
     <MESSAGE value="Hago modificaciones y agrego test de Queue" />
     <MESSAGE value="Agrego test de Stack" />
+<<<<<<< Updated upstream
     <MESSAGE value="Cambios" />
     <MESSAGE value="Arreglo findRecursivo" />
     <MESSAGE value="BinarySearch Arreglado y Test comenzado" />
     <MESSAGE value="Test BinarySearchTree (falta DELETE)" />
     <option name="LAST_COMMIT_MESSAGE" value="Test BinarySearchTree (falta DELETE)" />
+=======
+    <MESSAGE value="Agrego binarySearchTree y sus respectivos test de nuevo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Agrego binarySearchTree y sus respectivos test de nuevo" />
+>>>>>>> Stashed changes
   </component>
 </project>
