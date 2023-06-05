@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f91ce5e-ddf7-4297-97a5-87c82be8758c" name="Changes" comment="Test BinarySearchTree (falta DELETE)">
-      <change afterPath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/heap/MyHeap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/heap/MyHeapImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/heap/NodoH.java" afterDir="false" />
+    <list default="true" id="9f91ce5e-ddf7-4297-97a5-87c82be8758c" name="Changes" comment="Heap">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/MyHeap/IngresoHeap.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/MyHeap/MyHeap.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/MyHeap/MyHeapImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/heap/MyHeap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/heap/MyHeap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/heap/MyHeapImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/heap/MyHeapImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/MyBinarySearchTreeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/MyBinarySearchTreeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,23 +35,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "C:/Users/Yabel/OneDrive - Universidad de Montevideo/Documentos/UM/Semestre 3/Prog 2/GitHub/grupo15-p2-labs",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "vcs.Git",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Yabel/OneDrive - Universidad de Montevideo/Documentos/UM/Semestre 3/Prog 2/GitHub/grupo15-p2-labs&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -66,7 +63,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MyBinarySearchTreeTest.insert">
+  <component name="RunManager" selected="JUnit.MyBinarySearchTreeTest.delete">
     <configuration name="MyBinarySearchTreeTest.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="grupo15-p2-labs" />
       <option name="PACKAGE_NAME" value="" />
@@ -119,11 +116,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MyBinarySearchTreeTest.delete" />
         <item itemvalue="JUnit.MyBinarySearchTreeTest.insert" />
         <item itemvalue="JUnit.MyBinarySearchTreeTest.inOrder" />
         <item itemvalue="JUnit.MyBinarySearchTreeTest.posOrder" />
         <item itemvalue="JUnit.MyBinarySearchTreeTest.preOrder" />
-        <item itemvalue="JUnit.MyBinarySearchTreeTest.delete" />
       </list>
     </recent_temporary>
   </component>
@@ -143,7 +140,8 @@
       <workItem from="1685841017090" duration="678000" />
       <workItem from="1685924068181" duration="2261000" />
       <workItem from="1685926374793" duration="6714000" />
-      <workItem from="1685968330156" duration="9126000" />
+      <workItem from="1685968330156" duration="11056000" />
+      <workItem from="1686000149174" duration="70000" />
     </task>
     <task id="LOCAL-00001" summary="prueba commit">
       <created>1685747035006</created>
@@ -215,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685976220206</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Heap">
+      <created>1685978524363</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1685978524363</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,6 +236,7 @@
     <MESSAGE value="Arreglo findRecursivo" />
     <MESSAGE value="BinarySearch Arreglado y Test comenzado" />
     <MESSAGE value="Test BinarySearchTree (falta DELETE)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test BinarySearchTree (falta DELETE)" />
+    <MESSAGE value="Heap" />
+    <option name="LAST_COMMIT_MESSAGE" value="Heap" />
   </component>
 </project>

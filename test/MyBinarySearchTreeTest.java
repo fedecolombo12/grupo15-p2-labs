@@ -32,8 +32,9 @@ public class MyBinarySearchTreeTest {
         nuevoArbol.insert(3, "b");
         nuevoArbol.insert(4,"o");
 
-        System.out.println(nuevoArbol);
+
         // Delete PROBAR QUE FUNCIONA
+        nuevoArbol.delete(2);
     }
 
     @Test
