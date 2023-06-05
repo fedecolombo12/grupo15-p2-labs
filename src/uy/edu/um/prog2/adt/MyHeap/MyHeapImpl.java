@@ -35,9 +35,6 @@ public class MyHeapImpl <T extends Comparable<T>> implements MyHeap{
 
         }
 
-
-
-
     }
 
     private T getPadre(int posHijo) {
