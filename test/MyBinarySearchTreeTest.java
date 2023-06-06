@@ -1,8 +1,6 @@
 
-
 import org.junit.jupiter.api.Test;
 import uy.edu.um.prog2.adt.binarySearchTree.MyBinarySearchTreeImpl;
-import uy.edu.um.prog2.adt.binarySearchTree.MyBinarySearchTree;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class MyBinarySearchTreeTest {
