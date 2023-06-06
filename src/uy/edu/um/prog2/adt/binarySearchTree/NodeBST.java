@@ -5,8 +5,16 @@ import java.util.List;
 public class NodeBST<K extends Comparable<K>, T> {
 
     private K key;
-
     private T value;
+    private NodeBST<K,T> left;
+    private NodeBST<K,T> right;
+
+    public NodeBST(K key, T value) {
+        this.key = key;
+        this.value = value;
+        this.right = null;
+        this.left = null;
+    }
 
     public K getKey() {
         return key;
@@ -24,112 +32,96 @@ public class NodeBST<K extends Comparable<K>, T> {
         this.value = value;
     }
 
-    private NodeBST<K,T> leftCh;
-
-    public NodeBST<K, T> getLeftCh() {
-        return leftCh;
+    public NodeBST<K, T> getLeft() {
+        return left;
     }
-    public void setLeftCh(NodeBST<K, T> left) {
-        this.leftCh = left;
+    public void setLeft(NodeBST<K, T> left) {
+        this.left = left;
     }
 
-    private NodeBST<K,T> rightCh;
-
-    public NodeBST<K, T> getRightCh() {
-        return rightCh;
+    public NodeBST<K, T> getRight() {
+        return right;
     }
 
-    public void setRightCh(NodeBST<K, T> right) {
-        this.rightCh = rightCh;
+    public void setRight(NodeBST<K, T> right) {
+        this.right = right;
     }
 
 
     public NodeBST<K,T> findMin() {
         NodeBST<K,T> encontrar = this;
-        if (leftCh != null) {
-            encontrar = leftCh.findMin();
+        if (left != null) {
+            encontrar = left.findMin();
         }
         return encontrar;
     }
 
-    public NodeBST(K key, T value) {
-        this.key = key;
-        this.value = value;
-        this.rightCh = null;
-        this.leftCh = null;
-    }
-
     public List<K> inOrderT(){
         List<K> lista = new ArrayList<>();
-
         // Recorrer los nodos del subarbol DERECHO
-        if (rightCh != null){
-            lista.addAll(rightCh.inOrderT());
+        if (getRight() != null){
+            lista.addAll(getRight().inOrderT());
         }
 
         // Agregar clave de NODO ACTUAL
         lista.add(this.getKey());
 
         // Recorrer los nodos del subarbol IZQUIERDO
-        if (leftCh != null){
-            lista.addAll(leftCh.inOrderT());
+        if (getLeft() != null){
+            lista.addAll(getLeft().inOrderT());
         }
-
         return lista;
     }
-
     public List<K> posOrderT(){
         List<K> lista = new ArrayList<>();
 
         // Recorrer los nodos del subarbol DERECHO
-        if (rightCh != null){
-            lista.addAll(rightCh.inOrderT());
+        if (getRight() != null){
+            lista.addAll(getRight().inOrderT());
         }
 
         // Recorrer los nodos del subarbol IZQUIERDO
-        if (leftCh != null){
-            lista.addAll(leftCh.inOrderT());
+        if (getLeft() != null){
+            lista.addAll(getLeft().inOrderT());
         }
 
         // Agregar clave de NODO ACTUAL
         lista.add(this.getKey());
         return lista;
     }
-
     public List<K> preOrderT(){
         List<K> lista = new ArrayList<>();
         lista.add(this.getKey());
 
         // Recorrer los nodos del subarbol DERECHO
-        if (rightCh != null){
-            lista.addAll(rightCh.inOrderT());
+        if (getRight() != null){
+            lista.addAll(getRight().inOrderT());
         }
 
         // Recorrer los nodos del subarbol IZQUIERDO
-        if (leftCh != null){
-            lista.addAll(leftCh.inOrderT());
+        if (getLeft() != null){
+            lista.addAll(getLeft().inOrderT());
         }
         return lista;
     }
-
 
     // Agregar nuevo nodo al ABB de manera recursiva.
     public void ingresoRec(K key, T value){
         NodeBST<K,T> elementoNuevo = new NodeBST<>(key, value);
         //
-        if (key.compareTo(this.key) > 0) {
-            if (rightCh == null){
-                rightCh = elementoNuevo;
+        if (key.compareTo(getKey()) > 0) {
+            if (getRight() == null){
+                setRight(elementoNuevo);;
             } else {
                 // llama al mismo método
-                rightCh.ingresoRec(key, value);
+                getRight().ingresoRec(key, value);
             }
         } else {
-            if (leftCh == null) {
-                leftCh = elementoNuevo;
+            if (getLeft() == null) {
+                setLeft(elementoNuevo);
             } else {
                 // llama al mismo método
-                leftCh.ingresoRec(key, value);
+                getLeft().ingresoRec(key, value);
             }
         }
     }
@@ -139,23 +131,23 @@ public class NodeBST<K extends Comparable<K>, T> {
     public NodeBST<K,T> deleteRec(K key){
         int valores = ((Comparable<K>)key).compareTo(key);
         if (valores < 0){
-            if (leftCh != null){
-                leftCh = leftCh.deleteRec(key);
+            if (getLeft() != null){
+                setLeft(getLeft().deleteRec(key));
             }
         } else if (valores> 0){
-            if (rightCh != null){
-                rightCh = rightCh.deleteRec(key);
+            if (getRight() != null){
+                setRight(getRight().deleteRec(key));
             }
-        } else if (rightCh != null && leftCh != null) {
-                NodeBST<K,T> aux = rightCh.findMin();
-                this.key = aux.getKey();
-                this.value = aux.getValue();
-                rightCh = rightCh.deleteRec(aux.getKey());
+        } else if (getRight() != null && getLeft() != null) {
+                NodeBST<K,T> aux = getRight().findMin();
+                setKey(aux.getKey());
+                setValue(aux.getValue());
+                setRight(getRight().deleteRec(aux.getKey()));
         } else {
-                if (leftCh != null) {
-                    return leftCh;
+                if (getLeft() != null) {
+                    return getLeft();
                 } else {
-                    return rightCh;
+                    return getRight();
                 }
             }
             return this;

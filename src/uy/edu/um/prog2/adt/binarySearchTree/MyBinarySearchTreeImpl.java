@@ -1,7 +1,6 @@
 package uy.edu.um.prog2.adt.binarySearchTree;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 
 public class MyBinarySearchTreeImpl <K extends Comparable<K>, T> implements MyBinarySearchTree<K, T> {
@@ -30,11 +29,11 @@ public class MyBinarySearchTreeImpl <K extends Comparable<K>, T> implements MyBi
         if (raiz != null){
         int valor = keyBuscar.compareTo(nuevoNodo.getKey());
             if (valor > 0) {
-               valInicial = findRec(keyBuscar, nuevoNodo.getRightCh());
+               valInicial = findRec(keyBuscar, nuevoNodo.getRight());
             } else if (valor == 0) {
                 valInicial = raiz.getValue();
             } else {
-                valInicial = findRec(keyBuscar, raiz.getLeftCh());
+                valInicial = findRec(keyBuscar, raiz.getLeft());
             }
         }
         return valInicial;
@@ -60,17 +59,17 @@ public class MyBinarySearchTreeImpl <K extends Comparable<K>, T> implements MyBi
 
 
     public NodeBST min(NodeBST<K,T> node){
-        if (node.getLeftCh() == null){
+        if (node.getLeft() == null){
             return node;
         }
-        return min(node.getLeftCh());
+        return min(node.getLeft());
     }
 
     public NodeBST delMin(NodeBST<K,T> node){
-        if (node.getLeftCh() == null){
-            return node.getRightCh();
+        if (node.getLeft() == null){
+            return node.getRight();
         }
-        node.setLeftCh(delMin(node.getLeftCh()));
+        node.setLeft(delMin(node.getLeft()));
         return node;
     }
 
