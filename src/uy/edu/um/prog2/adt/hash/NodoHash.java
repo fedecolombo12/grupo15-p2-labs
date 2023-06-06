@@ -1,12 +1,12 @@
 package uy.edu.um.prog2.adt.hash;
 
-public class NodoHash<K, V> implements Comparable<NodoHash<K, V>> {
+public class NodoHash<K, T> implements Comparable<NodoHash<K, T>> {
     private K key;
-    private V value;
-    private NodoHash<K, V> next;
-    public NodoHash(K key, V value) {
+    private T data;
+    private NodoHash<K, T> next;
+    public NodoHash(K key, T data) {
         this.key = key;
-        this.value = value;
+        this.data = data;
         this.next = null;
     }
 
@@ -18,24 +18,24 @@ public class NodoHash<K, V> implements Comparable<NodoHash<K, V>> {
         this.key = key;
     }
 
-    public V getValue() {
-        return value;
+    public T getData() {
+        return data;
     }
 
-    public void setValue(V value) {
-        this.value = value;
+    public void setData(T data) {
+        this.data = data;
     }
 
-    public NodoHash<K, V> getNext() {
+    public NodoHash<K, T> getNext() {
         return next;
     }
 
-    public void setNext(NodoHash<K, V> next) {
+    public void setNext(NodoHash<K, T> next) {
         this.next = next;
     }
 
     @Override
-    public int compareTo(NodoHash<K, V> o) {
+    public int compareTo(NodoHash<K, T> o) {
         return 0;
     }
 }

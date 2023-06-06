@@ -109,12 +109,13 @@ public class MyHeapImpl <K extends Comparable<K>, T> implements MyHeap<K, T> {
         nodoHeaps = Arrays.copyOf(nodoHeaps, nuevaCap);
     }
 
-    public static <K extends Comparable<K>, T> void imprimirArreglo(NodoHeap<K, T>[] arreglo) {
+
+    public <K extends Comparable<K>, T> void imprimirArreglo(NodoHeap<K, T>[] arreglo) {
         for (NodoHeap<K, T> nodo : arreglo) {
+            if (nodo != null){
             System.out.println(nodo.getKey() + ": " + nodo.getValue());
+            }
         }
-        System.out.println();
+
     }
-
-
 }

@@ -24,7 +24,7 @@ public class TablaHash<K, V> implements MyHash<K, V> {
         ListaHash<K, V> bucket = buckets[code];
         if (contains(key)) {
             NodoHash<K, V> existingNode = bucket.getNode(key);
-            existingNode.setValue(value); // Actualiza el valor existente
+            existingNode.setData(value); // Actualiza el valor existente
         } else {
             bucket.add(new NodoHash<>(key, value)); // Agrega un nuevo nodo si la clave no existe
         }

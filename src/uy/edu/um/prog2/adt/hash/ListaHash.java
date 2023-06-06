@@ -51,7 +51,7 @@ public class ListaHash<K, V> implements Lista<NodoHash<K, V>> {
         NodoHash<K, V> current = first;
         while (current != null) {
             if (current.getKey().equals(key)) {
-                return current.getValue();
+                return current.getData();
             }
             current = current.getNext();
         }
@@ -125,7 +125,7 @@ public class ListaHash<K, V> implements Lista<NodoHash<K, V>> {
     public void print() {
         NodoHash<K, V> current = first;
         for (int i = 0; i < this.size(); i++) {
-            System.out.print(current.getValue() );
+            System.out.print(current.getData() );
             if (current.getNext() != null) {
                 current = current.getNext();
             }

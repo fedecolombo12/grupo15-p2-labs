@@ -56,7 +56,14 @@ class HeapTest {
         up.insert(4, "D");
         up.insert(5, "E");
 
-        System.out.println("ARREGLO: ");
+        System.out.println("Arreglo: ");
+        up.imprimirArreglo(up.getNodoHeaps());
+        up.heapifyUp();
+        // System.out.println("Arreglo heapifyDown");
+        // up.imprimirArreglo(up.getNodoHeaps());
+        up.heapifyDown();
+        // System.out.println("Arreglo heapifyDown");
+        // up.imprimirArreglo(up.getNodoHeaps());
 
 
 

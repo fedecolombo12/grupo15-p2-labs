@@ -1,24 +1,24 @@
 package uy.edu.um.prog2.adt.heap;
 
-public class NodoHeap<K extends Comparable<K>, V> {
+public class NodoHeap<K extends Comparable<K>, T> {
     private K key;
 
-    private V value;
+    private T value;
 
-    public NodoHeap(K key, V value) {
+    public NodoHeap(K key, T data) {
         this.key = key;
-        this.value = value;
+        this.value = data;
     }
 
     public void setKey(K key) {
         this.key = key;
     }
 
-    public V getValue() {
+    public T getValue() {
         return value;
     }
 
-    public void setValue(V value) {
+    public void setValue(T value) {
         this.value = value;
     }
 
