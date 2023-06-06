@@ -1,4 +1,3 @@
-
 import org.junit.jupiter.api.Test;
 import uy.edu.um.prog2.adt.binarySearchTree.MyBinarySearchTreeImpl;
 import static org.junit.jupiter.api.Assertions.*;

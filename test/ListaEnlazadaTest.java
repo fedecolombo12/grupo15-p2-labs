@@ -1,5 +1,4 @@
 import uy.edu.um.prog2.adt.linkedList.ListaEnlazada;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 public class ListaEnlazadaTest {

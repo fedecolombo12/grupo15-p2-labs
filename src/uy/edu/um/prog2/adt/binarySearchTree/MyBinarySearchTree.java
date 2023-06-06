@@ -1,4 +1,8 @@
 package uy.edu.um.prog2.adt.binarySearchTree;
+
+// Aspecto a CAMBIAR para la realización del OBLIGATORIO - debemos utilizar nuestra LINKEDLIST
+import uy.edu.um.prog2.adt.linkedList.ListaEnlazada;
+
 import java.util.List;
 
 public interface MyBinarySearchTree <K extends Comparable<K>, T> {
