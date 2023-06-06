@@ -80,7 +80,7 @@ public class NodeBST<K extends Comparable<K>, T> {
         return lista;
     }
 
-    // Agregar nuevo nodo al ABB de manera recursiva.
+    // Agregar nuevo nodo al BST de manera recursiva.
     public void ingresoRec(K key, T value){
         NodeBST<K,T> elementoNuevo = new NodeBST<>(key, value);
         if (key.compareTo(getKey()) > 0) {
