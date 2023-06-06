@@ -1,8 +1,5 @@
 package uy.edu.um.prog2.adt.hash;
 
-import uy.edu.um.prog2.adt.linkedList.ListaEnlazada;
-import uy.edu.um.prog2.adt.linkedList.Lista;
-
 public class TablaHash<K, V> implements MyHash<K, V> {
 
     ListaHash<K,V>[] buckets;

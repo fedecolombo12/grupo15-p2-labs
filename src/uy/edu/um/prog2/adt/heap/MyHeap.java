@@ -1,16 +1,10 @@
 package uy.edu.um.prog2.adt.heap;
 
-import uy.edu.um.prog2.adt.binarySearchTree.NodeBST;
-
-public interface MyHeap<K extends Comparable<K>,T> {
-
-    NodeBST<K,T> remove();
-
-    void insert(K key,T data) throws Exception;
-
+public interface MyHeap <K, V> {
+    void insert (K key, V value);
+    V extractMax ();
+    void heapifyUp();
+    void heapifyDown();
     int size();
-
-    String toString();
-
-
+    boolean is_empty();
 }

@@ -17,6 +17,7 @@ class QueueTest {
         queueTest.enqueue(8);
         queueTest.enqueue(11);
         queueTest.enqueue(15);
+        queueTest.enqueueRight(28);
 
         try {
             Integer eliminado = queueTest.dequeue();
