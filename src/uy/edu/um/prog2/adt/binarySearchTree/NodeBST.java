@@ -1,8 +1,9 @@
 package uy.edu.um.prog2.adt.binarySearchTree;
 import java.util.ArrayList;
 import java.util.List;
+import uy.edu.um.prog2.adt.linkedList.ListaEnlazada;
 
-public class NodeBST<K extends Comparable<K>, T> {
+public class NodeBST<K extends Comparable<K>, T> implements Comparable<NodeBST<K, T>> {
     private K key;
     private T value;
     private NodeBST<K,T> left;

@@ -1,10 +1,14 @@
 package uy.edu.um.prog2.adt.binarySearchTree;
+import uy.edu.um.prog2.adt.binarySearchTree.NodeBST;
+import uy.edu.um.prog2.adt.linkedList.ListaEnlazada;
 
-import java.util.ArrayList;
 import java.util.List;
+
 
 public class MyBinarySearchTreeImpl <K extends Comparable<K>, T> implements MyBinarySearchTree<K, T> {
     private NodeBST<K, T> raiz;
+    private ListaEnlazada<NodeBST<K, T>> orden;
+
     public NodeBST<K, T> getRaiz() {return raiz;}
     public void setRaiz(NodeBST<K, T> raiz) {
         this.raiz = raiz;
@@ -47,6 +51,24 @@ public class MyBinarySearchTreeImpl <K extends Comparable<K>, T> implements MyBi
             setRaiz(getRaiz().deleteRec(key));
         }
     }
+
+    @Override
+    public ListaEnlazada preOrder() {
+        return null;
+    }
+
+    @Override
+    public ListaEnlazada inOrder() {
+        return null;
+    }
+
+    @Override
+    public ListaEnlazada posOrder() {
+        ListaEnlazada<NodeBST<K, T>> list = new ListaEnlazada<>();
+        this.postOrderHelper(this.raiz, list);
+        return list;
+    }
+
     public NodeBST min(NodeBST<K,T> node){
         if (node.getLeft() == null){
             return node;
@@ -62,32 +84,27 @@ public class MyBinarySearchTreeImpl <K extends Comparable<K>, T> implements MyBi
         return node;
     }
 
-    @Override
-    public List<K> preOrder() {
-        List<K> nuevaList = new ArrayList<K>();
-        if (getRaiz() != null){
-            nuevaList.addAll(getRaiz().preOrderT());
+
+    private void postOrderHelper(NodeBST<K, T> node, ListaEnlazada<NodeBST<K, T>> list) {
+        if (node != null) {
+            this.postOrderHelper(node.getLeft(), list);
+            this.postOrderHelper(node.getRight(), list);
+            list.add(node);
         }
-        return nuevaList;
+
+    }
+    public void printTree() {
+        printTreeRec(getRaiz());
     }
 
-    @Override
-    public List<K> inOrder() {
-        List<K> nuevaLista = new ArrayList<K>();
-        if (getRaiz() != null){
-            nuevaLista.addAll(getRaiz().inOrderT());
+    private void printTreeRec(NodeBST<K, T> node) {
+        if (node != null) {
+            printTreeRec(node.getLeft());
+            System.out.println(node.getKey() + ": " + node.getValue());
+            printTreeRec(node.getRight());
         }
-        return nuevaLista;
     }
 
-    @Override
-    public List<K> posOrder() {
-        List<K> nuevaLis = new ArrayList<K>();
-        if (getRaiz() != null){
-            nuevaLis.addAll(getRaiz().posOrderT());
-        }
-        return nuevaLis;
-    }
 
 }
 

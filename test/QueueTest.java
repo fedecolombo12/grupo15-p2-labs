@@ -2,7 +2,6 @@ import org.junit.jupiter.api.Test;
 import uy.edu.um.prog2.adt.exceptions.EmptyQueueException;
 import uy.edu.um.prog2.adt.queue.MyQueue;
 import uy.edu.um.prog2.adt.queue.Queue;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class QueueTest {

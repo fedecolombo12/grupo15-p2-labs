@@ -1,6 +1,7 @@
 package uy.edu.um.prog2.adt.hash;
 
 import uy.edu.um.prog2.adt.linkedList.Lista;
+import uy.edu.um.prog2.adt.queue.NodoQueue;
 
 public class ListaHash<K, V> implements Lista<NodoHash<K, V>> {
     private NodoHash<K, V> first;
@@ -120,6 +121,11 @@ public class ListaHash<K, V> implements Lista<NodoHash<K, V>> {
     @Override
     public void addOrder(NodoHash<K, V> value) {
 
+    }
+
+    @Override
+    public void imprimirLista() {
+            return;
     }
 
     public void print() {

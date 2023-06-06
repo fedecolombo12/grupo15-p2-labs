@@ -10,4 +10,5 @@ public interface Lista<T extends Comparable<T>> {
     void change(T value, int direction); // ej 9
     /* ListaEnlazada<T> crearNuevaLista(); // 11 */
     void addOrder(T value);
+    void imprimirLista();
 }

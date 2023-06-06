@@ -1,6 +1,7 @@
 import org.junit.jupiter.api.Test;
 import uy.edu.um.prog2.adt.binarySearchTree.MyBinarySearchTreeImpl;
 import static org.junit.jupiter.api.Assertions.*;
+import uy.edu.um.prog2.adt.linkedList.ListaEnlazada;
 
 public class MyBinarySearchTreeTest {
     MyBinarySearchTreeImpl<Integer,String> nuevoArbol = new MyBinarySearchTreeImpl<>();
@@ -29,9 +30,8 @@ public class MyBinarySearchTreeTest {
         nuevoArbol.insert(3, "b");
         nuevoArbol.insert(4,"o");
 
-
-        // Delete PROBAR QUE FUNCIONA
         nuevoArbol.delete(2);
+        nuevoArbol.printTree();
     }
 
     @Test
@@ -68,8 +68,10 @@ public class MyBinarySearchTreeTest {
 
         System.out.println("Pos Order: ");
         System.out.println(nuevoArbol.posOrder());
+
+        }
     }
-}
+
 
 
 

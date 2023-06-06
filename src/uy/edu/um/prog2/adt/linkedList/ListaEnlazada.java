@@ -1,5 +1,8 @@
 package uy.edu.um.prog2.adt.linkedList;
 
+import uy.edu.um.prog2.adt.binarySearchTree.NodeBST;
+import uy.edu.um.prog2.adt.queue.NodoQueue;
+
 public class ListaEnlazada<T extends Comparable<T>> implements Lista<T>{
     private NodoLista<T> primero;
     private NodoLista<T> ultimo;
@@ -187,4 +190,15 @@ public class ListaEnlazada<T extends Comparable<T>> implements Lista<T>{
         }
         return false;
     }
+
+    @Override
+    public void imprimirLista() {
+        NodoLista<T> aux = getPrimero();
+        while (aux != null) {
+            System.out.print(aux.getValue() + ", ");
+            aux = aux.getSiguiente();
+        }
+        System.out.println();
+    }
+
 }
