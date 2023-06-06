@@ -1,8 +1,5 @@
 package uy.edu.um.prog2.adt.heap;
 
-import uy.edu.um.prog2.adt.heap.MyHeap;
-import uy.edu.um.prog2.adt.heap.NodoHeap;
-
 import java.util.Arrays;
 
 public class MyHeapImpl <K extends Comparable<K>, V> implements MyHeap<K, V>{
