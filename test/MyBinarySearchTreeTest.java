@@ -69,6 +69,7 @@ public class MyBinarySearchTreeTest {
         System.out.println("Pos Order: ");
         System.out.println(nuevoArbol.posOrder());
 
+        // ARREGLAR: Imprime lista de nodos, pero no los valores - nuevoArbol.posOrder().imprimirLista();
         }
     }
 

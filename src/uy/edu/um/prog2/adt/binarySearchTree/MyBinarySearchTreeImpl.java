@@ -69,6 +69,21 @@ public class MyBinarySearchTreeImpl <K extends Comparable<K>, T> implements MyBi
         return list;
     }
 
+
+    private void postOrderHelper(NodeBST<K, T> node, ListaEnlazada<NodeBST<K, T>> list) {
+        if (node != null) {
+            this.postOrderHelper(node.getLeft(), list);
+            this.postOrderHelper(node.getRight(), list);
+            list.add(node);
+        }
+
+    }
+
+    public void printPosOrder() {
+        ListaEnlazada<NodeBST<K, T>> posOrderList = posOrder();
+        System.out.println(posOrderList);
+    }
+
     public NodeBST min(NodeBST<K,T> node){
         if (node.getLeft() == null){
             return node;
@@ -84,15 +99,6 @@ public class MyBinarySearchTreeImpl <K extends Comparable<K>, T> implements MyBi
         return node;
     }
 
-
-    private void postOrderHelper(NodeBST<K, T> node, ListaEnlazada<NodeBST<K, T>> list) {
-        if (node != null) {
-            this.postOrderHelper(node.getLeft(), list);
-            this.postOrderHelper(node.getRight(), list);
-            list.add(node);
-        }
-
-    }
     public void printTree() {
         printTreeRec(getRaiz());
     }
