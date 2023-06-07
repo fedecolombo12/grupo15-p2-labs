@@ -47,39 +47,6 @@ public class NodeBST<K extends Comparable<K>, T> implements Comparable<NodeBST<K
         return encontrar;
     }
 
-    public List<K> inOrderT(){
-        List<K> lista = new ArrayList<>();
-        if (getRight() != null){
-            lista.addAll(getRight().inOrderT()); // Recorrer los nodos del subarbol derecho
-        }
-        lista.add(this.getKey()); // Agregar clave de nodo actual
-        if (getLeft() != null){
-            lista.addAll(getLeft().inOrderT()); // Recorrer los nodos del subarbol izquierdo
-        }
-        return lista;
-    }
-    public List<K> posOrderT(){
-        List<K> lista = new ArrayList<>();
-        if (getRight() != null){
-            lista.addAll(getRight().inOrderT()); // Recorrer los nodos del subarbol derecho
-        }
-        if (getLeft() != null){
-            lista.addAll(getLeft().inOrderT()); // Recorrer los nodos del subarbol izquierdo
-        }
-        lista.add(this.getKey()); // Agregar clave de nodo actual
-        return lista;
-    }
-    public List<K> preOrderT(){
-        List<K> lista = new ArrayList<>();
-        lista.add(this.getKey());
-        if (getRight() != null){
-            lista.addAll(getRight().inOrderT()); // Recorrer los nodos del subarbol derecho
-        }
-        if (getLeft() != null){
-            lista.addAll(getLeft().inOrderT());  // Recorrer los nodos del subarbol izquierdo
-        }
-        return lista;
-    }
 
     // Agregar nuevo nodo al BST de manera recursiva.
     public void ingresoRec(K key, T value){
