@@ -111,6 +111,24 @@ public class ListaEnlazada<T extends Comparable<T>> implements Lista<T>{
         }
         return result;
     }
+
+    public T getPosition(int position) {
+        if (position > size()){
+            return null;
+        }
+        else {
+            NodoLista<T> newNode = this.primero;
+            while (position > 0){
+                newNode = newNode.getSiguiente();
+                position = position - 1;
+            }
+            if (newNode == null){
+                return null;
+            }
+            return newNode.getValue();
+        }
+    }
+
     @Override
     public boolean contains(T value) {
         boolean ok = false;

@@ -1,8 +1,5 @@
 package uy.edu.um.prog2.adt.binarySearchTree;
-import uy.edu.um.prog2.adt.binarySearchTree.NodeBST;
 import uy.edu.um.prog2.adt.linkedList.ListaEnlazada;
-
-import java.util.List;
 
 
 public class MyBinarySearchTreeImpl <K extends Comparable<K>, T> implements MyBinarySearchTree<K, T> {
@@ -54,34 +51,49 @@ public class MyBinarySearchTreeImpl <K extends Comparable<K>, T> implements MyBi
 
     @Override
     public ListaEnlazada preOrder() {
-        return null;
+        ListaEnlazada<NodeBST<K, T>> listPreO = new ListaEnlazada<>();
+        this.preOrderR(this.raiz, listPreO);
+        return listPreO;
+    }
+
+    private void preOrderR(NodeBST<K, T> node, ListaEnlazada<NodeBST<K, T>> nodeListPreO){
+        if (node != null){
+            nodeListPreO.add(node);
+            this.preOrderR(node.getLeft(), nodeListPreO);
+            this.preOrderR(node.getRight(), nodeListPreO);
+        }
     }
 
     @Override
     public ListaEnlazada inOrder() {
-        return null;
+        ListaEnlazada<NodeBST<K, T>> listInO = new ListaEnlazada<>();
+        this.inOrderR(this.raiz, listInO);
+        return listInO;
     }
+
+
+    private void inOrderR(NodeBST<K, T> node, ListaEnlazada<NodeBST<K, T>> nodeListInO){
+        if (node != null){
+            this.inOrderR(node.getLeft(), nodeListInO);
+            nodeListInO.add(node);
+            this.inOrderR(node.getRight(),nodeListInO);
+        }
+    }
+
 
     @Override
     public ListaEnlazada posOrder() {
-        ListaEnlazada<NodeBST<K, T>> list = new ListaEnlazada<>();
-        this.postOrderHelper(this.raiz, list);
-        return list;
+        ListaEnlazada<NodeBST<K, T>> listPosO = new ListaEnlazada<>();
+        this.posOrderR(this.raiz, listPosO);
+        return listPosO;
     }
-
-
-    private void postOrderHelper(NodeBST<K, T> node, ListaEnlazada<NodeBST<K, T>> list) {
+    private void posOrderR(NodeBST<K, T> node, ListaEnlazada<NodeBST<K, T>> nodeListPosO) {
         if (node != null) {
-            this.postOrderHelper(node.getLeft(), list);
-            this.postOrderHelper(node.getRight(), list);
-            list.add(node);
+            this.posOrderR(node.getLeft(), nodeListPosO);
+            this.posOrderR(node.getRight(), nodeListPosO);
+            nodeListPosO.add(node);
         }
 
-    }
-
-    public void printPosOrder() {
-        ListaEnlazada<NodeBST<K, T>> posOrderList = posOrder();
-        System.out.println(posOrderList);
     }
 
     public NodeBST min(NodeBST<K,T> node){
